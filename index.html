@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style1.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Molle:ital@1&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Tenali+Ramakrishna&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="navigation">
+        <a href="#">Logo</a>
+    </div>
+    <div class="container">
+        <img src="/undraw_authentication_fsn5.svg" alt="">
+        <div class="card">
+            <div class="inner-box" id="card">
+                <div class="card-front">
+                    <h1>Sign In</h1>
+                    <form>
+                        <input type="text" placeholder="Email Id" class="input-box" required>
+                        <input type="text" placeholder="Password" class="input-box" required>
+
+                    </form>
+                    <button type="btn" class="btn" onclick="openRegister()">I'm new</button>
+                    <a href="#">Forgot Password</a>
+                </div>
+                <div class="card-back">
+                    <h1>Register</h1>
+                    <form>
+                        <input type="text" placeholder="Email Id" class="input-box" required>
+                        <input type="text" placeholder="Password" class="input-box" required>
+                        <input type="text" placeholder="Confirm Password" class="input-box" required>
+
+                    </form>
+                    <button type="btn" class="btn" onclick="openLogin()">SignIN</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <a href="#">Copyright By Karan Shah</a>
+    </div>
+    <script>
+        var card = document.getElementById("card");
+
+        function openRegister() {
+            card.style.transform = "rotateX(-180deg)";
+        }
+
+        function openLogin() {
+            card.style.transform = "rotateX(0deg)";
+        }
+    </script>
+</body>
+
+</html>
